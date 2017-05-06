@@ -4,15 +4,21 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { ZippyComponent } from './zippy/zippy.component';
+import { BodyComponent } from './body/body.component';
+import { CollapseModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ZippyComponent,
+    BodyComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    CollapseModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
